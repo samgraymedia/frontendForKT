@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <title>the Building</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.0.1/css/foundation.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/motion-ui/1.1.1/motion-ui.css">
+    <link rel="stylesheet" href="css/KTstyle.css">
+    <link rel="stylesheet" href="css/SAMstyle.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.0.1/js/vendor/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.0.1/js/foundation.min.js"></script>
+  </head>
+
+  <body>
+
+    <div class="off-canvas-wrapper">
+      <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
+        <div class="off-canvas position-right" id="offCanvas" data-off-canvas data-position="right">
+          <!-- Close button -->
+          <button class="close-button" aria-label="Close menu" type="button" data-close>
+                    <span aria-hidden="true">&times;</span>
+                </button>
+
+          <!-- Mobile Menu -->
+          <nav>
+            <ul class="menu">
+              <li><a href="#">The Building</a></li>
+              <li><a href="<?php echo esc_url( home_url( '/' ) ); ?>location">Location</a></li>
+              <li><a href="<?php echo esc_url( home_url( '/' ) ); ?>future-fit">Future-fit</a></li>
+              <li><a href="<?php echo esc_url( home_url( '/' ) ); ?>plans-specs">Plans &amp; Specs</a></li>
+              <li><a href="#">Transport</a></li>
+              <li><a href="<?php echo esc_url( home_url( '/' ) ); ?>opportunity">Opportunity</a></li>
+              <li><a href="#">Skills</a></li>
+              <li><a href="#">The Developer</a></li>
+              <li><a href="#">News</a></li>
+              <li><a class="button hollow white" href="#">Make an enquiry</a></li>
+              <li><a class="button secondary" href="#">360 Tour</a></li>
+            </ul>
+          </nav>
+        </div>
+
+        <div class="off-canvas-content" data-off-canvas-content>
+
+          <header id="masthead" class="site-header" role="banner">
+            <div class="row align-middle">
+
+              <div class="columns small-6 medium-4 large-3">
+                <a href="<?php echo esc_url( home_url( '/' ) ); ?>"><img class="logo" data-interchange="[<?php echo THEME_URL;?>/assets/images/logo.png, small], [<?php echo THEME_URL;?>/assets/images/logo@2x.png, large]" alt="<?php bloginfo( 'name' ); ?>"></a>
+              </div>
+
+              <div class="columns small-6 medium-8 large-9 text-right">
+                <div class="site-header__mobile-nav">
+                  <button type="button" class="menu-icon align-middle hide-for-xlarge text-right mb-0" data-toggle="offCanvas" aria-expanded="false" aria-controls="offCanvas"></button>
+                  <a class="button hollow white site-header__enquiry-button hide-for-xlarge" href="#">Make an enquiry</a>
+                </div>
+
+                <nav id="site-navigation" class="main-navigation" role="navigation">
+                  <ul class="submenu text-right show-for-xlarge">
+                    <li><a href="<?php echo esc_url( home_url( '/' ) ); ?>plans-specs">Plans &amp; Specs</a></li>
+                    <li><a href="#">Transport</a></li>
+                    <li><a href="<?php echo esc_url( home_url( '/' ) ); ?>opportunity">Opportunity</a></li>
+                    <li><a href="<?php echo esc_url( home_url( '/' ) ); ?>skills">Skills</a></li>
+                    <li><a href="<?php echo esc_url( home_url( '/' ) ); ?>the-developer">The Developer</a></li>
+                    <li><a href="#">News</a></li>
+                  </ul>
+                  <ul class="menu text-right show-for-large">
+                    <li><a href="<?php echo esc_url( home_url( '/' ) ); ?>the-building">The Building</a></li>
+                    <li><a href="<?php echo esc_url( home_url( '/' ) ); ?>location">Location</a></li>
+                    <li><a href="<?php echo esc_url( home_url( '/' ) ); ?>future-fit">Future-fit</a></li>
+                    <li><a class="button hollow white show-for-xlarge" href="<?php echo esc_url( home_url( '/' ) ); ?>make-an-enquiry">Make an enquiry</a></li>
+                    <li><a class="button secondary" href="#">360 Tour</a></li>
+                  </ul>
+                </nav>
+              </div>
+
+            </div>
+          </header>
+        </div>
+        <div class="enqTitle">
+          <div class="row align-center text-center">
+            <div class="columns small-12 medium-9 large-8">
+              <h1>MAKE AN ENQUIRY</h1>
+            </div>
+          </div>
+        </div>
+        <div class="enqTitle-text">
+          <div class="row align-center text-center">
+            <div class="columns small-12 medium-9 large-8">
+              <p>PLEASE MAKE YOUR ENQUIRY</p>
+              <p>WE WILL COME BACK TO YOU SHORTLY WITH A RESPONSE</p>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="main-form">
+          <div class="row align-center">
+            <div class="columns small-12 medium-9 large-8">
+              <div role="form" lang="en-US" dir="ltr">
+                <form action="" method="post" class="">
+                  <p><label>NAME*<br>
+              <span><input type="text" name="your-name" value="" placeholder="Your Name"></span> </label></p>
+                  <p><label> EMAIL*<br>
+                <span><input type="text" name="your-Email" value="" placeholder="Your Email Address"></span> </label></p>
+                  </label>
+                  </p>
+                  <p><label> TELEPHONE<br>
+                <span><input type="text" name="your-Telephone" value="" placeholder="Your Telephone Number"></span> </label></p>
+                  <p><label> COMMENT / ENQUIRY*<br>
+              <span>
+                <textarea name="your-message" placeholder="Please add your comments here"></textarea>
+              </span>
+            </label></p>
+                  <p><input type="submit" value="Send Question"><span></span></p>
+                  <div class="wpcf7-response-output wpcf7-display-none"></div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+
+
+
+  </body>
+
+</html>

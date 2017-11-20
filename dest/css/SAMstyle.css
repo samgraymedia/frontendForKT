@@ -87,3 +87,51 @@
 .orbit-slide, .orbit-container, .orbit {
   height: 100vh !important;
 }
+
+.enqTitle {
+  position: relative;
+}
+
+.enqTitle h1 {
+  margin-bottom: 24px;
+}
+
+.enqTitle h1::after {
+  border-bottom: 3px solid #77edac;
+  top: 120px;
+  content: "";
+  height: 1px;
+  left: calc(50% - 150px);
+  position: absolute;
+  width: 300px;
+}
+
+.enqTitle-text p {
+  color: #000;
+  text-transform: uppercase;
+  margin-bottom: 24px;
+}
+
+.main-form {
+  width: 800px;
+  margin: 0 auto;
+  margin-top: 88px;
+}
+
+.main-form textarea {
+  width: 568px;
+  height: 174px;
+}
+
+.main-form input[type="submit"] {
+  color: #fff;
+  background-color: #77edac;
+  font-size: 16px;
+  font-weight: 400;
+  padding: 16px;
+  text-transform: none;
+  -webkit-appearance: button;
+  cursor: pointer;
+  border: 0;
+  border-radius: 4px;
+}
