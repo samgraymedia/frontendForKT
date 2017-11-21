@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <title>Plan</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.0.1/css/foundation.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/motion-ui/1.1.1/motion-ui.css">
+    <link rel="stylesheet" href="css/KTstyle.css">
+    <link rel="stylesheet" href="css/SAMstyle.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.0.1/js/vendor/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.0.1/js/foundation.min.js"></script>
+  </head>
+
+  <body>
+    <div class="plans-bg">
+
+
+      <div class="off-canvas-wrapper">
+        <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
+          <div class="off-canvas position-right" id="offCanvas" data-off-canvas data-position="right">
+            <!-- Close button -->
+            <button class="close-button" aria-label="Close menu" type="button" data-close>
+                      <span aria-hidden="true">&times;</span>
+                  </button>
+
+            <!-- Mobile Menu -->
+            <nav>
+              <ul class="menu">
+                <li><a href="#">The Building</a></li>
+                <li><a href="<?php echo esc_url( home_url( '/' ) ); ?>location">Location</a></li>
+                <li><a href="<?php echo esc_url( home_url( '/' ) ); ?>future-fit">Future-fit</a></li>
+                <li><a href="<?php echo esc_url( home_url( '/' ) ); ?>plans-specs">Plans &amp; Specs</a></li>
+                <li><a href="#">Transport</a></li>
+                <li><a href="<?php echo esc_url( home_url( '/' ) ); ?>opportunity">Opportunity</a></li>
+                <li><a href="#">Skills</a></li>
+                <li><a href="#">The Developer</a></li>
+                <li><a href="#">News</a></li>
+                <li><a class="button hollow white" href="#">Make an enquiry</a></li>
+                <li><a class="button secondary" href="#">360 Tour</a></li>
+              </ul>
+            </nav>
+          </div>
+
+        </div>
+      </div>
+      <header id="masthead" class="site-header" role="banner">
+        <div class="row align-middle">
+
+          <div class="columns small-6 medium-4 large-3">
+            <a href="<?php echo esc_url( home_url( '/' ) ); ?>"><img class="logo" data-interchange="[<?php echo THEME_URL;?>/assets/images/logo.png, small], [<?php echo THEME_URL;?>/assets/images/logo@2x.png, large]" alt="<?php bloginfo( 'name' ); ?>"></a>
+          </div>
+
+          <div class="columns small-6 medium-8 large-9 text-right">
+            <div class="site-header__mobile-nav">
+              <button type="button" class="menu-icon align-middle hide-for-xlarge text-right mb-0" data-toggle="offCanvas" aria-expanded="false" aria-controls="offCanvas"></button>
+              <a class="button hollow white site-header__enquiry-button hide-for-xlarge" href="#">Make an enquiry</a>
+            </div>
+
+            <nav id="site-navigation" class="main-navigation" role="navigation">
+              <ul class="submenu text-right show-for-xlarge">
+                <li><a href="<?php echo esc_url( home_url( '/' ) ); ?>plans-specs">Plans &amp; Specs</a></li>
+                <li><a href="#">Transport</a></li>
+                <li><a href="<?php echo esc_url( home_url( '/' ) ); ?>opportunity">Opportunity</a></li>
+                <li><a href="<?php echo esc_url( home_url( '/' ) ); ?>skills">Skills</a></li>
+                <li><a href="<?php echo esc_url( home_url( '/' ) ); ?>the-developer">The Developer</a></li>
+                <li><a href="#">News</a></li>
+              </ul>
+              <ul class="menu text-right show-for-large">
+                <li><a href="<?php echo esc_url( home_url( '/' ) ); ?>the-building">The Building</a></li>
+                <li><a href="<?php echo esc_url( home_url( '/' ) ); ?>location">Location</a></li>
+                <li><a href="<?php echo esc_url( home_url( '/' ) ); ?>future-fit">Future-fit</a></li>
+                <li><a class="button hollow white show-for-xlarge" href="<?php echo esc_url( home_url( '/' ) ); ?>make-an-enquiry">Make an enquiry</a></li>
+                <li><a class="button secondary" href="#">360 Tour</a></li>
+              </ul>
+            </nav>
+          </div>
+
+        </div>
+      </header>
+      <div class="plans">
+        <div class="row align-center text-center title">
+          <div class="columns small-12 medium-9 large-8">
+            <h1>PLANS & SPECIFICATIONS</h1>
+          </div>
+        </div>
+        <div class="row slideshow">
+          <div class="small-12 large-12 columns">
+            <div class="orbit" role="region" data-orbit data-use-m-u-i="false">
+              <ul class="orbit-container">
+                <button class="orbit-previous" aria-label="previous"><span class = "show-for-sr">Previous Slide</span>◀</button>
+                <button class="orbit-next" aria-label="next"><span class = "show-for-sr">Next Slide</span>▶</button>
+
+                <li class="is-active orbit-slide">
+                  <div class="slide-container">
+                    <img src="http://fillmurray.com/200/200" alt="">
+                    <div class="info-slate-plan">
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                    </div>
+                  </div>
+                </li>
+
+                <li class="orbit-slide">
+                  <div class="slide-container">
+                    <img src="http://fillmurray.com/300/300" alt="">
+                    <div class="info-slate-plan">
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                    </div>
+                  </div>
+                </li>
+
+                <li class="orbit-slide">
+                  <div class="slide-container">
+                    <img src="http://fillmurray.com/400/400" alt="">
+                    <div class="info-slate-plan">
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                    </div>
+                  </div>
+                </li>
+
+                <li class="orbit-slide">
+                  <div class="slide-container">
+                    <img src="http://fillmurray.com/500/500" alt="">
+                    <div class="info-slate-plan">
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="row accordion info">
+          <div class="small-7 columns">
+            <div class="accordion-item">
+              <div class="accordion-title">
+                Lorem Ipsum
+              </div>
+            </div>
+            <div class="accordion-item">
+              <div class="accordion-title">
+                Lorem Ipsum
+              </div>
+            </div>
+            <div class="accordion-item">
+              <div class="accordion-title">
+                Lorem Ipsum
+              </div>
+            </div>
+            <div class="accordion-item">
+              <div class="accordion-title">
+                Lorem Ipsum
+              </div>
+            </div>
+            <div class="accordion-item">
+              <div class="accordion-title">
+                Lorem Ipsum
+              </div>
+            </div>
+            <div class="accordion-item">
+              <div class="accordion-title">
+                Lorem Ipsum
+              </div>
+            </div>
+            <div class="accordion-item">
+              <div class="accordion-title">
+                Lorem Ipsum
+              </div>
+            </div>
+            <div class="accordion-item">
+              <div class="accordion-title">
+                Lorem Ipsum
+              </div>
+            </div>
+            <div class="accordion-item">
+              <div class="accordion-title">
+                Lorem Ipsum
+              </div>
+            </div>
+          </div>
+
+
+
+          <div class="small-4 columns tour text-center">
+            <h3>360 tour</h3>
+            <p>Small amount of supporting text to drive users to virtual tour.</p>
+            <img src="http://fillmurray.com/200/200" alt="">
+            <br>
+            <button class="tourBtn" type="button" name="button">360 tour</button>
+            <br>
+            <button class="download" type="button" name="button">Download Plans</button>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <script>
+      $(document).ready(function() {
+        $(document).foundation();
+      })
+    </script>
+  </body>
+
+</html>
