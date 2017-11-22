@@ -275,12 +275,9 @@ html {
   border: none;
 }
 
-.accordion-item {
-  padding-bottom: 16px;
-  max-height: 5000px;
-}
+.accordion-item {}
 
-.accordion-title {
+.accordion-item {
   font-size: .875rem;
   background-color: #fff;
   color: #77edac;
@@ -290,6 +287,9 @@ html {
   text-align: left;
   border-bottom: none;
   border-radius: 2px;
+  padding-bottom: 16px;
+  max-height: 5000px;
+  width: 100%;
 }
 
 .accordion-title:hover, .accordion-title:focus {
@@ -297,7 +297,7 @@ html {
   color: white;
 }
 
-.accordion-title::before {
+.accordion-item::before {
   content: '^';
   position: absolute;
   right: 1rem;
@@ -511,4 +511,31 @@ html {
 .pencent {
   font-size: 60px;
   color: black;
+}
+
+/* Style the buttons that are used to open and close the accordion panel */
+
+button.accordion-item {
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  color: #00693d transition: 0.4s;
+  margin: 10px 0;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+
+button.accordion.active, button.accordion:hover {
+  background-color: #ccc;
+}
+
+/* Style the accordion panel. Note: hidden by default */
+
+div.panel {
+  padding: 0 18px;
+  display: none;
+  transition: all 0.3s ease-in-out;
 }

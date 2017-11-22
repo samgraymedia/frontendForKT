@@ -11,6 +11,19 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.0.1/js/vendor/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.0.1/js/foundation.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/3.2.5/javascripts/jquery.foundation.clearing.js"></script>
+    <script type="text/javascript" src="js/script.js">
+    </script>
+    <script type="text/javascript">
+      var img = document.getElementsByClassName("imgLink");
+      var x;
+      for (x = 0; x < img.length; x++) {
+        img[x].onclick = function() {
+          console.log("hello");
+          $("lightboxImg").attr("src", "http://fillmurray.com/200/200");
+        }
+      }
+    </script>
+
   </head>
 
   <body>
@@ -85,19 +98,27 @@
             <h1>PLANS & SPECIFICATIONS</h1>
           </div>
         </div>
-        <ul class="clearing-thumbs" data-clearing>
-          <li><a href="img/hero.jpg"><img src="http://fillmurray.com/200/200"></a></li>
-          <li><a href="http://fillmurray.com/200/200"><img src="http://fillmurray.com/200/200"></a></li>
-          <li><a href="http://fillmurray.com/200/200"><img src="http://fillmurray.com/200/200"></a></li>
-        </ul>
         <div class="row slideshow">
           <div class="small-12 large-12 columns">
             <div class="orbit" role="region" data-orbit data-use-m-u-i="false">
-              <ul class="orbit-container clearing-thumbs" data-clearing>
+              <ul class="orbit-container">
                 <button class="orbit-previous" aria-label="previous"><span class = "show-for-sr">Previous Slide</span>◀</button>
                 <button class="orbit-next" aria-label="next"><span class = "show-for-sr">Next Slide</span>▶</button>
                 <li class="is-active orbit-slide">
-                  <a href="http://fillmurray.com/200/200">
+                  <a class="imgLink">
+                    <div class="slide-container">
+
+                      <img src="http://fillmurray.com/200/200" alt="">
+                      <div class="info-slate-plan">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                </li>
+
+                <li class="is-active orbit-slide">
+                  <a class="imgLink">
                     <div class="slide-container">
 
                       <img src="http://fillmurray.com/200/200" alt="">
@@ -110,7 +131,7 @@
                 </li>
 
                 <li class="is-active orbit-slide">
-                  <a href="http://fillmurray.com/200/200">
+                  <a class="imgLink">
                     <div class="slide-container">
 
                       <img src="http://fillmurray.com/200/200" alt="">
@@ -123,20 +144,7 @@
                 </li>
 
                 <li class="is-active orbit-slide">
-                  <a href="http://fillmurray.com/200/200">
-                    <div class="slide-container">
-
-                      <img src="http://fillmurray.com/200/200" alt="">
-                      <div class="info-slate-plan">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                      </div>
-
-                    </div>
-                  </a>
-                </li>
-
-                <li class="is-active orbit-slide">
-                  <a href="http://fillmurray.com/200/200">
+                  <a class="imgLink">
                     <div class="slide-container">
 
                       <img src="http://fillmurray.com/200/200" alt="">
@@ -153,50 +161,43 @@
         </div>
         <div class="row accordion info">
           <div class="small-7 columns">
-            <div class="accordion-item">
-              <div class="accordion-title">
-                Lorem Ipsum
-              </div>
+            <button class="accordion-item">Section 1</button>
+            <div class="panel">
+              <p>Lorem ipsum...</p>
             </div>
-            <div class="accordion-item">
-              <div class="accordion-title">
-                Lorem Ipsum
-              </div>
+
+            <button class="accordion-item">Section 2</button>
+            <div class="panel">
+              <p>Lorem ipsum...</p>
             </div>
-            <div class="accordion-item">
-              <div class="accordion-title">
-                Lorem Ipsum
-              </div>
+
+            <button class="accordion-item">Section 3</button>
+            <div class="panel">
+              <p>Lorem ipsum...</p>
             </div>
-            <div class="accordion-item">
-              <div class="accordion-title">
-                Lorem Ipsum
-              </div>
+            <button class="accordion-item">Section 3</button>
+            <div class="panel">
+              <p>Lorem ipsum...</p>
             </div>
-            <div class="accordion-item">
-              <div class="accordion-title">
-                Lorem Ipsum
-              </div>
+            <button class="accordion-item">Section 3</button>
+            <div class="panel">
+              <p>Lorem ipsum...</p>
             </div>
-            <div class="accordion-item">
-              <div class="accordion-title">
-                Lorem Ipsum
-              </div>
+            <button class="accordion-item">Section 3</button>
+            <div class="panel">
+              <p>Lorem ipsum...</p>
             </div>
-            <div class="accordion-item">
-              <div class="accordion-title">
-                Lorem Ipsum
-              </div>
+            <button class="accordion-item">Section 3</button>
+            <div class="panel">
+              <p>Lorem ipsum...</p>
             </div>
-            <div class="accordion-item">
-              <div class="accordion-title">
-                Lorem Ipsum
-              </div>
+            <button class="accordion-item">Section 3</button>
+            <div class="panel">
+              <p>Lorem ipsum...</p>
             </div>
-            <div class="accordion-item">
-              <div class="accordion-title">
-                Lorem Ipsum
-              </div>
+            <button class="accordion-item">Section 3</button>
+            <div class="panel">
+              <p>Lorem ipsum...</p>
             </div>
           </div>
 
@@ -215,10 +216,32 @@
         </div>
       </div>
     </div>
+    <script type="text/javascript">
+      var acc = document.getElementsByClassName("accordion-item");
+      var i;
+
+      for (i = 0; i < acc.length; i++) {
+        acc[i].onclick = function() {
+
+          /* Toggle between adding and removing the "active" class,
+          to highlight the button that controls the panel */
+          this.classList.toggle("active");
+
+          /* Toggle between hiding and showing the active panel */
+          var panel = this.nextElementSibling;
+          if (panel.style.display === "block") {
+            panel.style.display = "none";
+          } else {
+            panel.style.display = "block";
+          }
+        }
+      }
+    </script>
     <script>
       $(document).ready(function() {
         $(document).foundation();
-        $(document).foundation('clearing', 'reflow');
+
+
       })
     </script>
   </body>
