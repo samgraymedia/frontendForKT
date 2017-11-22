@@ -467,3 +467,48 @@ html {
   width: 280px;
   z-index: 2;
 }
+
+.c-aerial--opportunity-map {
+  background-image: url(../img/belfast-aerial.jpg);
+  margin: 0 auto;
+}
+
+.c-pin__pulse-dot {
+  top: 165px;
+  left: 40px;
+}
+
+.c-pin--one-opp {
+  left: 752px;
+  top: 273px;
+}
+
+.opportunity {
+  color: black;
+}
+
+.opportunity-title {
+  font-size: 40px;
+  text-transform: uppercase;
+}
+
+.comparisons-title {
+  background-color: #00693d;
+}
+
+.comparisons-title p {
+  padding: 8px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.number {
+  font-size: 60px;
+  color: black;
+  display: inline;
+}
+
+.pencent {
+  font-size: 60px;
+  color: black;
+}
